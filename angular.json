@@ -19,7 +19,7 @@
             "polyfills": [
               "zone.js"
             ],
-            "baseHref": "https://orellanasolec.github.io/portafolio/",
+            "baseHref": "/portafolio/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
