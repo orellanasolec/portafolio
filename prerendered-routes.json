@@ -1,0 +1,8 @@
+{
+  "routes": [
+    "/habilidades",
+    "/home",
+    "/otros",
+    "/proyectos"
+  ]
+}
