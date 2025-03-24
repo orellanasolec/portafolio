@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+        backgroundImage: {
+        'pieza': "url('./assets/pieza.svg')", // Asegúrate de que las rutas son correctas
+      },
       fontFamily: {
         'impact': ['ImpactLTStd', 'sans-serif'], // Nombre personalizado para tu fuente
       },
