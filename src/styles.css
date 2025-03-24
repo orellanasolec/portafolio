@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "flowbite/plugin";
+@font-face {
+     font-family: 'ImpactLTStd'; /* Elige un nombre para tu fuente */
+     src: url('./assets/fonts/ImpactLTStd.woff2') format('woff2');
+     font-weight: normal; /* O ajusta el peso de la fuente */
+     font-style: normal; /* O ajusta el estilo de la fuente */
+     letter-spacing: 122px;
+   }
+
+   svg {
+     border: 2px solid black; /* Ajusta el ancho y el color del borde */
+   }

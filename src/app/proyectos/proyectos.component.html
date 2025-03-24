@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<div #carrusel class="w-full h-screen grid grid-cols-3 d3  relative">
+  <div class="w-full h-screen  pt-10 rotarIzquierda  opacity-40" ngIf="imagenes.length > 3"> <img src={{imagenes[3]}} class="md:w-[500px]  h-[280px] mt-14"></div>
+  <div class=" w-full h-screen  pt-10"> <img src={{imagenes[0]}} class="md:min-w-[400px] h-[350px] "></div>
+  <div class=" w-full h-screenes pt-10 rotarDerecha opacity-40">   <img src={{imagenes[1]}} class="md:w-[500px] h-[280px]  mt-14"></div>
+<div class="absolute left-12 flex items-end justify-end"><img src="flechaIzquierda.svg" class="opacity-50 w-12 pt-40 justify-end hover:opacity-100" (click)="cambiarIzquierda()"></div>
+<div class="absolute right-12"><img src="flechaDerecha.svg" class="opacity-50 hover:opacity-100 w-12 pt-40" (click)="cambiarDerecha()"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="relative bg-green-600 w-full h-screen">
+  <article class="absolute top-1/4 left-1/2 transform -translate-x-1/2 z-50 text-center">
+    <h3 class="text-2xl font-medium">Api de películas</h3>
+    <img src="peliculas.png" class="md:w-[600px]">
+    <p class="text-slate-500 font-light">Lorem ipsum dolor sit amet.</p>
+  </article>
+
+  <article class="absolute top-1/2 left-1/2 transform -translate-x-1/2 z-40 text-center">
+    <h3 class="text-2xl font-medium">Página web fundacion encantar</h3>
+    <img src="fundacion.png" class="md:w-[600px]">
+    <p class="text-slate-500 font-light">Lorem ipsum dolor sit amet.</p>
+  </article>
+
+  <article class="absolute top-3/4 left-1/2 transform -translate-x-1/2 z-30 text-center">
+    <h3 class="text-2xl font-medium">Página web Magaldi tango club</h3>
+    <img src="magaldi.png" class="md:w-[600px]">
+    <p class="text-slate-500 font-light">Lorem ipsum dolor sit amet.</p>
+  </article>
+
+  <article class="absolute top-full left-1/2 transform -translate-x-1/2 z-20 text-center">
+    <h3 class="text-2xl font-medium">Página web Pedro do Bandolim</h3>
+    <img src="bandolim.png" class="md:w-[600px]">
+    <p class="text-slate-500 font-light">Lorem ipsum dolor sit amet.</p>
+  </article>
+</div>

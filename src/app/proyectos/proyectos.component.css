@@ -1,0 +1,27 @@
+.rotarDerecha  { 
+    transform: rotateY(30deg);
+  
+}
+
+
+
+.rotarIzquierda  { 
+    transform: rotateY(-30deg);
+}
+
+.d3 {
+    perspective: 1000px;
+  }
+
+
+.rotar{
+    transform: rotateX(91deg);
+}
+
+.p{
+    transform-style: preserve-3d;
+}
+
+
+
+

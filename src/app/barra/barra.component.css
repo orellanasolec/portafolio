@@ -1,0 +1,87 @@
+@keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #5A5A54; /* Cambia este color a uno que combine con el texto */
+    }
+  }
+  
+  .typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #5A5A54; /* Simula el cursor de la máquina de escribir */
+    animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
+  }
+  
+
+  .movimiento {
+    animation: movimiento 20s 3s ease-in-out infinite;
+}
+
+@keyframes movimiento {
+    0% {
+      
+        left: 0%; /* Empieza en la esquina izquierda */
+        transform: translateX(0) rotateY(180deg); /* El auto comienza mirando a la izquierda (rotado 180deg) */
+    }
+
+    50% {
+     
+        left: 100%; /* Mueve hacia la derecha (al 100% de la pantalla) */
+        transform: translateX(-100%) rotateY(180deg); /* Mantiene la rotación hacia la izquierda */
+    }
+
+    51% {
+       
+        left: 100%; /* Mueve hacia la derecha (al 100% de la pantalla) */
+        transform: translateX(-100%) rotateY(0deg); /* Cambia la rotación hacia la derecha */
+    }
+
+    100% {
+       
+        left: 0%; /* Vuelve a la esquina izquierda */
+        transform: translateX(0) rotateY(0deg); /* Sigue mirando hacia la derecha */
+    }
+}
+
+
+.gradiente{
+  background: linear-gradient(to bottom,#8dd6f6,#ffffff);
+}
+
+
+
+@keyframes cambioDeColorGradual {
+  0% {
+    background: linear-gradient(to right, #ff0000, #ff8000); /* Rojo a naranja */
+  }
+  50% {
+    background: linear-gradient(to right, #ff8000, #0000ff); /* Naranja a azul */
+  }
+  100% {
+    background: linear-gradient(to right, #0000ff, #ff0000); /* Azul a rojo */
+  }
+}
+
+.mi-elemento {
+  width: 200px;
+  height: 200px;
+  animation: cambioDeColorGradual 4s infinite alternate;
+}
+
+.claseZBarra{
+  z-index:99999;
+  backdrop-filter: blur(10px);
+}

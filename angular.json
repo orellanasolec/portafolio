@@ -19,11 +19,12 @@
             "polyfills": [
               "zone.js"
             ],
+            "baseHref": "https://orellanasolec.github.io/portafolio/",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets"
               }
             ],
             "styles": [
